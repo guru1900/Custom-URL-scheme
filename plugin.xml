@@ -19,9 +19,9 @@
 
   <issue>https://github.com/EddyVerbruggen/Custom-URL-scheme/issues</issue>
 
-  <preference name="URL_SCHEME_vk" />
-  <preference name="URL_SCHEME_google" />
-  <preference name="URL_SCHEME_facebook" />
+  <preference name="URL_SCHEME_VKONTAKTE" />
+  <preference name="URL_SCHEME_GOOGLE" />
+  <preference name="URL_SCHEME_FACEBOOK" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -38,7 +38,7 @@
         <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>$URL_SCHEME_vk</string>
+            <string>$URL_SCHEME_VKONTAKTE</string>
           </array>
         </dict>
       </array>
@@ -48,7 +48,7 @@
         <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>$URL_SCHEME_google</string>
+            <string>$URL_SCHEME_GOOGLE</string>
           </array>
         </dict>
       </array>
@@ -58,7 +58,7 @@
         <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>$URL_SCHEME_facebook</string>
+            <string>$URL_SCHEME_FACEBOOK</string>
           </array>
         </dict>
       </array>
@@ -88,19 +88,19 @@
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$URL_SCHEME_vk"/>
+        <data android:scheme="$URL_SCHEME_VKONTAKTE"/>
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$URL_SCHEME_google" />
+        <data android:scheme="$URL_SCHEME_GOOGLE" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$URL_SCHEME_facebook" />
+        <data android:scheme="$URL_SCHEME_FACEBOOK" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
