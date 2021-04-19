@@ -22,6 +22,8 @@
   <preference name="URL_SCHEME_VKONTAKTE" />
   <preference name="URL_SCHEME_GOOGLE" />
   <preference name="URL_SCHEME_FACEBOOK" />
+  <preference name="URL_SCHEME_ODNOKLASSNIKI" />
+  <preference name="URL_SCHEME_MAIL" />
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -59,6 +61,26 @@
           <key>CFBundleURLSchemes</key>
           <array>
             <string>$URL_SCHEME_FACEBOOK</string>
+          </array>
+        </dict>
+      </array>
+    </config-file>
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>$URL_SCHEME_ODNOKLASSNIKI</string>
+          </array>
+        </dict>
+      </array>
+    </config-file>
+    <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+      <array>
+        <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>$URL_SCHEME_MAIL</string>
           </array>
         </dict>
       </array>
@@ -101,6 +123,18 @@
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
         <data android:scheme="$URL_SCHEME_FACEBOOK" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="$URL_SCHEME_ODNOKLASSNIKI" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="$URL_SCHEME_MAIL" />
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
